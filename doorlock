@@ -1,0 +1,24 @@
+"use strict"
+
+let doorPassword = +prompt("Create password for Door lock");
+let attempt=5;
+let enterPassword=+prompt("Enter password ");
+
+for (let i=0; i<=attempt;i++){
+
+    if (doorPassword===enterPassword){
+        break
+    }
+
+    console.log("Attempt password wrong! Please try again")
+    enterPassword=+prompt("Enter 4 digit password")
+    console.log(`Remaining password attempt ${attempt-i}`);
+}
+
+
+
+if(doorPassword!==enterPassword){
+    console.log("Door locked")
+}else{
+    console.log("Welcome Home Family");
+}
