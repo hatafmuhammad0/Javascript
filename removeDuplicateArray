@@ -1,0 +1,15 @@
+function removeSame (array){
+
+    let x = new Set();
+
+    for (i of array){
+        x.add(i);
+    }
+
+    return x
+}
+
+let mixNumber = [2,3,3,4,5,6,7,8,9,9,9];
+
+let uniqeNumbers = removeSame(mixNumber);
+console.log(uniqeNumbers);
