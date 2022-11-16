@@ -1,0 +1,18 @@
+// Guess Random Number
+
+let winningNumber = Math.floor(Math.random()*100)
+let guessCount = 0;
+let userInput;
+console.log(winningNumber)
+do{
+    userInput = Number.parseInt(prompt("Guess Number"));
+    guessCount ++;
+    if (userInput < winningNumber){console.log("Your Guess Number is less then winning Number")}
+    else if(userInput>winningNumber){
+        console.log("Your Guess Number is Greater then winning Number")
+    }
+
+}while(userInput !== winningNumber){
+    console.log(`Winning Number is ${winningNumber} & you guess the number in ${guessCount} attempt`)}
+
+    
