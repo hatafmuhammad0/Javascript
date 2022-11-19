@@ -1,0 +1,46 @@
+//Welcome to Rock Paper Seasor Game :) 
+
+const obj1 = {
+    0:"Rock",
+    1:"Paper",
+    2:"Seassor"
+}
+
+
+// Score for Players
+let player1Score = 0; 
+let player2Score = 0; 
+
+//Loop For Game
+do{
+    const number1 = Math.floor(Math.random()*3);
+    const number2 = Math.floor(Math.random()*3);
+
+    const player1play =obj1[number1]
+    const player2play = obj1[number2]
+
+    if(player1play == "Rock" && player2play == "Seassor"){
+        player1Score += 1}
+
+    else if (player1play == "Paper" && player2play == "Rock"){
+        player1Score +=1}
+
+    else if (player1play == "Seassor" && player2play == "Paper"){
+        player1Score +=1}
+    else if (player1play == player2play){} else {
+        player2Score +=1
+    }
+
+    console.log("Player 1 Guess is " , player1play , "Player 2 Guess is " ,player2play)
+    console.log("Player 1 Score is : " , player1Score , "Player 2 Sore is : " ,player2Score)
+
+}while((player1Score < 6) || (player2Score <6))
+
+if((player1Score == 6) ||(player2Score == 6)){
+    if(player1Score=6){
+        alert("Congratulations Player 1 You win")
+    }else{
+        alert("Congratulations Player 2 you Win")
+    }
+}
+
