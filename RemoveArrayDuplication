@@ -1,0 +1,14 @@
+
+//Just give your array in numbers argument in givenfunction...
+
+function newValue(numbers) {
+    let y = [];
+    numbers.forEach((value) => {
+
+        if (y.includes(value)) { } else {
+            y.push(value)
+        }
+
+    })
+    return y
+}
