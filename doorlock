@@ -22,3 +22,11 @@ if(doorPassword!==enterPassword){
 }else{
     console.log("Welcome Home Family");
 }
+
+
+# https://tea.xyz/what-is-this-file
+---
+version: 1.0.0
+codeOwners:
+  - '0xBcc7C4c09f33F7af09CFAB4d557bf636652864Ba'
+quorum: 1
